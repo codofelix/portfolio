@@ -1,0 +1,378 @@
+/* Palette de couleurs */
+:root {
+    --primary-color: #5f27cd;
+    --secondary-color: #ff3cac;
+    --highlight-color: #ffe66d;
+    --light-bg: #F3F4F6;
+    --dark-text: #111827;
+    --white: #ffffff;
+  }
+  
+  /* Base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+  }
+  
+  /* Fond animé */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/logo.png') no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(0.4);
+    animation: bgMove 25s infinite ease-in-out;
+  }
+  
+  @keyframes bgMove {
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.05) translateY(-10px); }
+    100% { transform: scale(1) translateY(0); }
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: var(--light-bg);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Sections */
+  section {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    padding: 60px 10%;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+  
+  /* Titres */
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  /* Boutons */
+  .btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Liens dans les projets */
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: var(--highlight-color);
+    color: var(--dark-text);
+  }
+  
+ 
+
+/*style.css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.container{
+    width: 90%;
+    max-width: 0 2px 5px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.navbar a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar a:hover{
+    color: #007bff;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+.hero-content h2{
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 12px 30px;
+    background-color:  #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.btn.hover{
+    background-color: #f1f1f1;
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*----A propos----*/
+
+.about {
+    padding: 60px 10%;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .about-text h3 {
+    font-size: 40px;
+    margin-bottom: 18px;
+  }
+  
+  .about-text p {
+    font-size: 20px;
+    margin-bottom: 18px;
+
+  }
+  
+  .about-photo {
+    flex: 1 ;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .about-photo img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /*----Compétences----*/
+
+  .skills {
+    padding: 40px 10%;
+  }
+  
+  .skill {
+    margin-bottom: 30px;
+  }
+  
+  .skill h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #1b1b1b;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 25px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: right;
+    line-height: 25px;
+    padding-right: 10px;
+    border-radius: 30px 0 0 30px;
+    transition: width 1s ease-in-out;
+  }
+
+  /*-----Projets-----*/
+  .page-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+  
+  .page-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px 10%;
+  }
+  
+  .project-card {
+    background-color: #c5e0ff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 2s ease;
+    text-align: center;
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .project-card video {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-20px);
+  }
+
+  .project-link{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+ 
+
+  /*----Contact-----*/
+  .contact-form-section {
+    padding: 40px 10%;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px; 
+    border-radius :8px;
+    font-size: 16px;
+  }
+  
+  .contact-form .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
