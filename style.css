@@ -49,6 +49,7 @@
     position: relative;
     z-index: 1;
     padding: 20px;
+    overflow: hidden;
   }
   
   /* Fond animé */
@@ -307,9 +308,10 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    padding: 40px; 
+    padding: 40px 10px; 
     max-width: 1200px;
     margin: auto;
+    box-sizing: border-box;
   }
   
   .project-card {
@@ -319,23 +321,22 @@ footer{
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     transition: transform 2s ease;
     text-align: center;
-    margin: auto;
   }
   
   .project-card img {
     max-width: 100%;
     border-radius: 10px;
-    margin: auto;
+    margin-bottom: 15px;
   }
   .project-card video {
     max-width: 100%;
     border-radius: 10px;
-    margin: auto;
+    margin-bottom: 15px;
   }
   
   .project-card h3 {
     font-size: 30px;
-    margin: auto;
+    margin-bottom: 10px;
   }
   
   .project-card p {
