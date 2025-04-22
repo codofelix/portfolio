@@ -15,6 +15,7 @@
         <header>
             <div class="container">
                 <h1 class="logo">FIX DESIGN</h1>
+                <div class="hamburger" id="hamburger"> <span></span><span></span><span></span></div>
                 <nav class="navbar">
                     <a href="index.html">Accueil</a>
                     <a href="about.html">A propos</a>
@@ -40,21 +41,13 @@
         <script>
             ScrollReveal().reveal('.hero-content',{ delay: 300, origin: 'bottom', distance: '50px'});
         </script>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navbar =document.getElementById('navbar');
+            hamburger.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+            })
+            </script>
     </body>
-
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>

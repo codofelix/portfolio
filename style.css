@@ -1,3 +1,38 @@
+/*----Menu hamburger---*/
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+/*---Menu caché par défaut sur mobile---*/
+
+@media(max-width:768px){
+  .navbar{
+    display: none;
+    flex-direction: column;
+    background-color: var(--white);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.hamburger{
+  display: flex;
+}
+}
+
 /* Palette de couleurs */
 :root {
     --primary-color: #5f27cd;
@@ -369,7 +404,7 @@ footer{
     padding: 12px 30px;
     background-color: #007bff;
     color: #fff;
-    border: none;
+    border: 1px;
     font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
