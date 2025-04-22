@@ -319,22 +319,23 @@ footer{
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     transition: transform 2s ease;
     text-align: center;
+    margin: auto;
   }
   
   .project-card img {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin: auto;
   }
   .project-card video {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin: auto;
   }
   
   .project-card h3 {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin: auto;
   }
   
   .project-card p {
