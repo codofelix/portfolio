@@ -66,10 +66,12 @@
     document.addEventListener("DOMContentLoaded", () => {
     const currentPage = location.pathname.split ('/').pop();
     const navLinks = document.querySelectorAll(".navbar a");
+    const navbar = document.getElementById('.navbar')
     navLinks.forEach(link => {
         const linkPage = link.getAttribute("href");
         if(linkPage === currentPage || (currentPage === "" && linkPage === "about.html")) { 
-        link.classList.add("active-link");}
+        link.classList.add("active-link");
+    navbar.classList.add('active')}
     });
     });       
 </script>
