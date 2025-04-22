@@ -52,5 +52,14 @@
     ScrollReveal().reveal('.reveal', { delay: 200, origin: 'bottom', distance: '50px' });
   </script>
 
+<script>
+  const hamburger = document.querySelector('.menu-toggle');
+  const navbar =document.querySelector('.navbar');
+  hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+  })
+  </script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
