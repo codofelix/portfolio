@@ -6,11 +6,6 @@
   cursor: pointer;
 }
 
-.navbar{
-  display: flex;
-  gap: 20px;
-}
-
 /*---Menu caché par défaut sur mobile---*/
 
 @media(max-width:768px){
@@ -21,12 +16,11 @@
   display: none;
   flex-direction: column;
   gap: 10px;
+  background: #333;
+  padding: 10px;
 }
 .navbar.active{
   display: flex;}
-.hamburger{
-  display: flex;
-}
 }
 
 /* Palette de couleurs */
