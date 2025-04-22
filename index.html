@@ -51,11 +51,11 @@
             <script src="js/script.js"></script>
         
             <script>
-                const links = document.querySelector('.navbar a');
+                const links = document.querySelectorAll('.navbar a');
                 const currentPage =window.location.pathname.split ('/').pop();
 
                 links.forEach(link => {
-                    if(link.getAttribuate('href')== currentPage){
+                    if(link.getAttribute('href')== currentPage){
                         link.classList.add('active-link');
                     }
                 })
