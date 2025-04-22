@@ -1,4 +1,15 @@
-/*----Menu hamburger---*/
+
+/* Palette de couleurs */
+:root {
+    --primary-color: #5f27cd;
+    --secondary-color: #ff3cac;
+    --highlight-color: #ffe66d;
+    --light-bg: #F3F4F6;
+    --dark-text: #111827;
+    --white: #ffffff;
+  }
+  
+  /*----Menu hamburger---*/
 
 .menu-toggle{
   font-size: 28px;
@@ -23,16 +34,6 @@
   display: flex;}
 }
 
-/* Palette de couleurs */
-:root {
-    --primary-color: #5f27cd;
-    --secondary-color: #ff3cac;
-    --highlight-color: #ffe66d;
-    --light-bg: #F3F4F6;
-    --dark-text: #111827;
-    --white: #ffffff;
-  }
-  
   /* Base */
   * {
     margin: 0;
