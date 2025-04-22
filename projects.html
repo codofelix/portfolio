@@ -82,5 +82,17 @@
   </script>
   <script src="js/script.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = location.pathname.split ('/').pop();
+    const navLinks = document.querySelectorAll(".navbar a");
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if(linkPage === currentPage || (currentPage === "" && linkPage === "projects.html")) { 
+        link.classList.add("active-link");}
+    });
+    });       
+</script>
+
 </body>
 </html>
