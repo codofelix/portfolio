@@ -307,7 +307,9 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    padding: 40px 10%;
+    padding: 40px; 
+    max-width: 1200px;
+    margin: auto;
   }
   
   .project-card {
