@@ -45,7 +45,7 @@
   body {
     background-color: var(--light-bg);
     color: var(--dark-text);
-    line-height: 1;
+    line-height: 1,2;
     position: relative;
     z-index: 1;
     padding: 20px;
